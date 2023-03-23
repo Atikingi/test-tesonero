@@ -1,0 +1,39 @@
+const LedIcon = () => {
+  return (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="20" fill="#E7EBF0" />
+      <rect
+        x="0.5"
+        y="0.5"
+        width="39"
+        height="39"
+        rx="19.5"
+        stroke="url(#paint0_linear_1_448)"
+        strokeOpacity="0.3"
+      />
+      <path
+        d="M12.5 18C12.5 13.8579 15.8579 10.5 20 10.5C24.1421 10.5 27.5 13.8579 27.5 18V25.5H12.5V18Z"
+        fill="white"
+        stroke="#2E3A59"
+      />
+      <rect x="14" y="26" width="2" height="5" fill="#2E3A59" />
+      <rect x="24" y="26" width="2" height="5" fill="#2E3A59" />
+      <rect x="13" y="23" width="14" height="2" fill="#A6ABBD" />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_448"
+          x1="41.5385"
+          y1="40.7692"
+          x2="-2.15385"
+          y2="-1.23077"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" strokeOpacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export default LedIcon;
