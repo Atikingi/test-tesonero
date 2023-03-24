@@ -45,6 +45,29 @@ export const GlobalStyle = createGlobalStyle`
    -ms-flex-direction: column;
    background-color: ${color.bgPrimary};
  }
+
+ .slick-dots li {
+   margin: 0 2px;
+ }
+ 
+ .slick-dots li.slick-active button:before {
+   opacity: 0.75;
+   color: #A6ABBD;
+ }
+
+ .slick-dots li button:before {
+   font-size: 10px;
+   color: #E7EBF0;
+   opacity: 1;
+ }
+
+ .slick-dots li.slick-active button:before {
+   background: #ffffff;
+ }
+
+ .slick-dots {
+   bottom: -60px;
+ }
 `;
 
 export const App = styled.div`

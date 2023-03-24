@@ -14,6 +14,7 @@ export const Container = styled.header`
   background-color: ${color.bgPrimary};
 
   @media (${device.laptop}) {
+    height: 95px;
     padding-left: 16px;
     padding-right: 16px;
   }

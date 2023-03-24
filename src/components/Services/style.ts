@@ -6,12 +6,9 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: calc(50% - 960px);
-  padding-right: calc(50% - 960px);
-  padding-top: 75px;
-  padding-bottom: 93px;
-  background: url('/test-tesonero/images/background1.webp') left bottom no-repeat,
-    url('/test-tesonero/images/background2.webp') right top no-repeat,
+  padding: 75px calc(50% - 960px) 133px;
+  background: url('/test-tesonero/images/background1.webp') left 80% fixed no-repeat,
+    url('/test-tesonero/images/background2.webp') right top fixed no-repeat,
     url('/test-tesonero/images/main_image.webp') 50% 67% no-repeat,
     linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%);
 
