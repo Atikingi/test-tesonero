@@ -7,8 +7,8 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 75px calc(50% - 960px) 133px;
-  background: url('/test-tesonero/images/background1.webp') left 80% fixed no-repeat,
-    url('/test-tesonero/images/background2.webp') right top fixed no-repeat,
+  background: url('/test-tesonero/images/background1.webp') left 85% fixed no-repeat,
+    url('/test-tesonero/images/background2.webp') right 10% fixed no-repeat,
     url('/test-tesonero/images/main_image.webp') 50% 67% no-repeat,
     linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%);
 
