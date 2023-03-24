@@ -83,6 +83,12 @@ export const SmallAvatar = styled.div`
   height: 125px;
   background: url('/test-tesonero/images/small_avatar.webp') top no-repeat;
   filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.5));
+
+  @media (${device.mobile}) {
+    min-width: 78px;
+    max-width: 78px;
+    background: url('/test-tesonero/images/avatar_mobile.webp') top no-repeat;
+  }
 `;
 
 export const SmallReviewsWrapper = styled.div`
@@ -168,6 +174,7 @@ export const TextWrapperSmall = styled.div`
   text-align: left;
 
   @media (${device.tablet}) {
+    padding-top: 0;
     text-align: left;
   }
 `;

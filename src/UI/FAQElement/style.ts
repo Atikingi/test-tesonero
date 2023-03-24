@@ -22,9 +22,10 @@ export const Wrapper = styled.div`
   }
 
   @media (${device.mobile}) {
-    width: 300px;
-    padding-left: 14px;
-    padding-right: 18px;
+    width: 280px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 `;
 
@@ -89,5 +90,9 @@ export const Description = styled.p<{ isActive: boolean }>`
   @media (${device.tablet}) {
     margin-left: 0;
     line-height: 19px;
+  }
+
+  @media (${device.mobile}) {
+    padding-bottom: 6px;
   }
 `;

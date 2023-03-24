@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { device } from '../../styles/mediaSizes';
 import { color } from '../../styles/colors';
 
+export const Container = styled.div`
+  position: relative;
+`;
+
 export const SliderWrapper = styled(Slider)`
   display: none;
 
@@ -29,9 +33,25 @@ export const IconWrapper = styled.div`
 `;
 
 export const NextArrowWrapper = styled.div`
+  display: none;
+  position: absolute;
+  bottom: -57px;
+  right: -6px;
   transform: rotate(270deg);
+
+  @media (${device.laptop}) {
+    display: block;
+  }
 `;
 
 export const PrevArrowWrapper = styled.div`
+  display: none;
+  position: absolute;
+  bottom: -57px;
+  left: -6px;
   transform: rotate(90deg);
+
+  @media (${device.laptop}) {
+    display: block;
+  }
 `;
