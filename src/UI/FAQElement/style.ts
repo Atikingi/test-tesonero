@@ -4,7 +4,8 @@ import { device } from '../../styles/mediaSizes';
 
 export const Wrapper = styled.div`
   position: relative;
-  width: 704px;
+  width: 100%;
+  max-width: 704px;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
@@ -16,13 +17,12 @@ export const Wrapper = styled.div`
   }
 
   @media (${device.tablet}) {
-    width: 440px;
-    display: flex;
     align-items: center;
   }
 
   @media (${device.mobile}) {
-    width: 280px;
+    max-width: 400px;
+    min-width: 240px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -30,18 +30,21 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   cursor: pointer;
 
   @media (${device.mobile}) {
+    padding-bottom: 7px;
     align-items: flex-start;
   }
 `;
 
 export const Title = styled.h5<{ isActive: boolean }>`
+  max-width: 473px;
   margin-left: 24px;
-  margin-bottom: 15px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,17 +54,22 @@ export const Title = styled.h5<{ isActive: boolean }>`
   cursor: pointer;
 
   @media (${device.tablet}) {
+    max-width: 350px;
+    min-width: 229px;
     font-size: 16px;
     line-height: 19px;
   }
 
   @media (${device.mobile}) {
+    max-width: 300px;
     margin-left: 0;
   }
 `;
 
 export const ArrowWrapper = styled.div<{ isActive: boolean }>`
-  margin-left: 148px;
+  display: flex;
+  justify-content: ${(props) => (props.isActive ? 'flex-start' : 'flex-end')}; ;
+  flex: 1 1;
   transform: ${(props) => (props.isActive ? 'rotate(180deg)' : 'rotate(0)')};
   cursor: pointer;
 
@@ -94,5 +102,6 @@ export const Description = styled.p<{ isActive: boolean }>`
 
   @media (${device.mobile}) {
     padding-bottom: 6px;
+    padding-right: 20px;
   }
 `;
