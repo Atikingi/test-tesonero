@@ -61,6 +61,15 @@ export const Subtitle = styled.h5`
 `;
 
 export const Wrapper = styled.div`
+  width: 100%;
+  padding-left: 89px;
+  padding-right: 167px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
+  @media (${device.tablet}) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `;
